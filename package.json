@@ -9,7 +9,7 @@
   "author": "Manuel Stofer",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.3.26",
+    "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "css-loader": "^0.23.1",
@@ -18,7 +18,7 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {
-    "bibimbap": "0.0.2",
-    "deku": "^2.0.0-rc7"
+    "bibimbap": "^0.1.0",
+    "deku": "^2.0.0-rc9"
   }
 }
