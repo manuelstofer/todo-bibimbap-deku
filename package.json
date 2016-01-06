@@ -18,7 +18,7 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {
-    "deku": "^2.0.0-rc7",
-    "bibimbap": "manuelstofer/bibimbap"
+    "bibimbap": "0.0.2",
+    "deku": "^2.0.0-rc7"
   }
 }
