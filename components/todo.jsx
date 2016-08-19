@@ -3,11 +3,9 @@ import Input from './input.jsx'
 import './todo.css'
 
 export default {
-  render: ({ props }) => {
+  render({ props: { cursor } }) {
 
-    let {cursor} = props;
-    let canAdd   = cursor.get('did-change');
-
+    let canAdd = cursor.get('did-change');
     let items = cursor.map('items', (cursor) => {
       return (
         <li>

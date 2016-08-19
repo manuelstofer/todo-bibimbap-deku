@@ -1,15 +1,13 @@
 import {element} from 'deku'
 
 export default {
-  render: ({ props }) => {
-
-    let { type, name, cursor } = props;
+  render({ props: { type, name, cursor, placeholder } }) {
 
     return (
       <input
         class="ui-input"
         type={ type }
-        placeholder={ props.placeholder }
+        placeholder={ placeholder }
         value={ cursor.get(name) }
         onInput={ onInput } />
     )
