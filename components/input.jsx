@@ -1,5 +1,10 @@
 import { element } from 'deku';
 
+/**
+ * Input component that demonstrates how 'two way binding'
+ * can be implemented
+ */
+
 export default {
   render({props: {type, name, cursor, placeholder}}) {
 
@@ -11,10 +16,7 @@ export default {
 
     function onInput(ev) {
       const value = ev.srcElement.value;
-      return cursor.transaction()
-        .set(name, value)
-        .set('did-change', true)
-        .commit();
+      return cursor.set(name, value)
     }
   }
 }
