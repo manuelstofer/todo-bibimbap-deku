@@ -8,7 +8,7 @@ module.exports = {
   },
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    './index.jsx',
+    './index.jsx'
   ],
   output: {
     path: __dirname,
@@ -39,7 +39,6 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
-    // new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
 };

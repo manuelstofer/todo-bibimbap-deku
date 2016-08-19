@@ -1,17 +1,18 @@
+let Bibimbab             = require('bibimbap');
 let {element, createApp} = require('deku');
-let Bibimbab = require('bibimbap');
 
-console.log('bla')
 
-let state = new Bibimbab({ items: ['some', 'items'] });
-state.on('commit', rerender)
+let state = new Bibimbab({
+  items: ['some', 'items']
+});
+state.on('commit', rerender);
 
-let render = createApp(document.body, function () {})
+let render = createApp(document.body, function() {});
 rerender();
 
 function rerender() {
   let Todo = require('./components/todo.jsx').default;
-  render(<Todo cursor={ state.cursor() }/>)
+  render(<Todo cursor={ state.cursor() } />);
 }
 
 if (module.hot) {

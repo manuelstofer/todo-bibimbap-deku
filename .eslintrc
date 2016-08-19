@@ -1,0 +1,27 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "dom"
+    }
+  },
+  "rules": {
+    "no-console": 2,
+    "default-case": 0,
+    "react/jsx-uses-react": 2,
+    "strict": [2, "never"],
+    "comma-dangle": [2, "never"]
+  }
+}
